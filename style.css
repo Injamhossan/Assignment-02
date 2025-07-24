@@ -332,7 +332,46 @@ ul li a {
   cursor: pointer;
   white-space: nowrap;
 }
+.footer-main {
+  display: flex;
+  gap: 150px;
+  margin-left: 300px;
+  margin-top: 50px;
 
+}
+.logo {
+  height: 179px;
+  width: 360px;
+}
+.logo h3 {
+  font-size: 1.3em;
+  color: var(--second-color);
+  margin-top: 16px;
+  font-weight: 400;
+}
+.icon img {
+  height: 36px;
+  width: 36px;
+  margin-left: 10px;
+}
+.footer-link {
+  text-decoration: none;
+  list-style: none;
+  font-size: 0.9em;
+  font-weight: 300;
+  align-items: center;
+}
+
+.footer-link a {
+  color: var(--second-color);
+}
+.footer-link li {
+  margin-bottom: 25px;
+}
+.icon {
+  justify-content: end;
+  margin-left: 110px;
+}
 @media (max-width: 1024px) {
   .deal-container {
     flex-direction: column;
