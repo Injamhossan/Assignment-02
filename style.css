@@ -9,6 +9,10 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --primary-color: #E95A08;
+    --second-color:rgba(0, 0, 0, 0.50);
+}
 nav {
     display: flex;
     align-items: center;
@@ -24,7 +28,7 @@ nav {
 
 .nav-main ul{
     display: flex;
-    gap: 50px;
+    gap: 40px;
 }
 
 ul li{
@@ -45,4 +49,27 @@ ul li a{
 .main-img {
     height: 355px;
     width: 570px;
+    justify-content:right;
+
+}
+.hero-section {
+    display: flex;
+    align-items:end;
+    margin-left: 200px;
+    margin-top: 300px;
+    gap: 350px;
+}
+.main-text {
+    height: 300px;
+    width: 570px;
+}
+.main-text h3 {
+    font-size: 4em;
+}
+.main-text h3 span {
+    color: var(--primary-color);
+}
+.main-text p {
+    color: var(--second-color);
+    font-size: 1.3em;
 }
