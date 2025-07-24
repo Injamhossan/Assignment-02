@@ -82,7 +82,7 @@ ul li a {
 
 .main-plant h3 {
   text-align: center;
-  font-size: 4em;
+  font-size: 3.1em;
 }
 .main-plant span {
   color: var(--primary-color);
@@ -133,6 +133,54 @@ ul li a {
   margin-right: 330px;
   gap: 30px;
 }
+.trusted-seller {
+  padding-top: 211px;
+  padding-left: 350px;
+}
+.trusted-seller-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.img-main {
+  position: relative;
+  width: 400px;
+  margin-right: 200px; 
+}
+
+.flower-img {
+  width: 100%;
+  height: auto;
+}
+
+.trusted-badge-1 {
+  position: absolute;
+  top: -115px;
+  right: -130px;
+  width: 286px;
+  height: 286px;
+  z-index: 5;
+}
+
+.flower-text {
+  max-width: 600px;
+}
+
+.flower-text h2 {
+  font-size: 3.15em;
+  margin-bottom: 20px;
+}
+
+.flower-text li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1.1em;
+  color: var(--second-color);
+  list-style: disc;
+  margin-left: 20px;
+}
+
 @media screen and (max-width: 576px) {
   nav {
     align-items: center;
@@ -154,7 +202,7 @@ ul li a {
   }
 
   .nav-main ul {
-    gap: 0;
+    gap: 0px;
   }
 
   .nav-main img {
@@ -165,17 +213,21 @@ ul li a {
     font-size: 1.5em;
   }
   .hero-section {
+    display: flex;
     flex-direction: column-reverse;
     padding-top: 30px;
     padding-bottom: 30px;
     gap: 0px;
   }
   .main-img {
-    height: 355px;
-    width: 570px;
+    height: 245px;
+    width: 393px;
   }
   .main-text h3 {
     margin: 20px;
+  }
+  .main-plant h3 {
+    font-size: 1.5em;
   }
   .main-text,
   p {
@@ -197,9 +249,9 @@ ul li a {
     font-family: inter;
   }
   .flower-card img {
-  height: 196px;
-  width: 171px;
-}
+    height: 196px;
+    width: 171px;
+  }
   .main-plant p {
     font-size: 0.9em;
     font-weight: bold;
@@ -209,23 +261,60 @@ ul li a {
   .main-flower-card {
     display: grid;
     grid-template-columns: repeat(2, 4fr);
-    padding-left: 30px;
+    padding-left: 70px;
     padding-top: 30px;
-    margin-left: 20px;
-    margin-right: 10px;
+    margin-left: 45px;
+    margin-right: 95px;
     gap: 30px;
   }
   .flower-card {
-  height: 340px;
-  width: 171px;
-  margin: 0;
+    height: 340px;
+    width: 171px;
+    margin: 0;
+  }
+  .btn-main {
+    background-color: var(--primary-color);
+    padding: 10px 36px;
+    color: white;
+    font-size: 0.9em;
+    border: none;
+    font-weight: bold;
+  }
+  .trusted-badge-1 {
+    display: none;
+  }
+  .trusted-seller-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .img-main {
+    display: block;
+    margin-left: 20px;
+  }
+  .trusted-seller {
+  padding-top: 50px;
+  padding-left: 20px;
 }
-.btn-main {
-  background-color: var(--primary-color);
-  padding: 10px 40px;
-  color: white;
+.flower-img {
+  width: 358px;
+  height: 398px;
+}
+.img-main {
+  width: fit-content;
+  width: 350px;
+  margin-right: 20px; 
+}
+.flower-text h2 {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.flower-text li {
+  margin-bottom: 15px;
+  line-height: 1.6;
   font-size: 0.9em;
-  border: none;
-  font-weight: bold;
+  color: var(--second-color);
+  list-style: disc;
+  margin-left: 20px;
 }
 }
